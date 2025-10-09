@@ -10,12 +10,12 @@
     </div>
     
     <!-- Menu links aligned to the right -->
-    <div class="ml-auto flex space-x-6">
-      <a href="/" class="text-gray-800 hover:text-green-700 font-medium">Home</a>
-      <a href="/about/" class="text-gray-800 hover:text-green-700 font-medium">About</a>
-      <a href="#more-info" class="text-gray-800 hover:text-green-700 font-medium">Prototype</a>
-      <a href="#contact-form" class="text-gray-800 hover:text-green-700 font-medium">Contact</a>
-    </div>
+<div class="ml-auto flex space-x-6">
+  <a href="{{ "/" | relURL }}" class="text-gray-800 hover:text-green-700 font-medium">Home</a>
+  <a href="{{ "about/" | relURL }}" class="text-gray-800 hover:text-green-700 font-medium">About</a>
+  <a href="#more-info" class="text-gray-800 hover:text-green-700 font-medium">Prototype</a>
+  <a href="#contact-form" class="text-gray-800 hover:text-green-700 font-medium">Contact</a>
+</div>
   </div>
 </nav>
   <div id="header-inner-wrapper" class="bg-gray-100 pt-32 lg:pt-32">
@@ -23,9 +23,6 @@
       class="w-full max-w-screen-xl relative mx-auto px-6 pt-16 pb-40 md:pb-24"
     >
       <div class="text-left md:text-center sm:max-w-2xl max-w-3xl mx-auto">
-        {{ with .Params.header_brand }}
-          {{- partial "header/brand.html" . -}}
-        {{ end }}
         {{ with .Params.header_tagline_paragraph }}
           {{- partial "header/tagline_paragraph.html" . -}}
         {{ end }}
