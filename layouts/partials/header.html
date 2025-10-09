@@ -1,0 +1,47 @@
+<header id="header">
+  <nav class="w-full bg-white shadow-md fixed top-0 left-0 z-50">
+  <div class="max-w-screen-xl mx-auto px-6 py-3 flex justify-between items-center">
+    
+    <!-- Brand / Logo on the left -->
+    <div class="text-xl font-bold text-green-700">
+      {{ with .Params.header_brand }}
+        {{- partial "header/brand.html" . -}}
+      {{ end }}
+    </div>
+    
+    <!-- Menu links aligned to the right -->
+    <div class="ml-auto flex space-x-6">
+      <a href="/" class="text-gray-800 hover:text-green-700 font-medium">Home</a>
+      <a href="/about/" class="text-gray-800 hover:text-green-700 font-medium">About</a>
+      <a href="#more-info" class="text-gray-800 hover:text-green-700 font-medium">Prototype</a>
+      <a href="#contact-form" class="text-gray-800 hover:text-green-700 font-medium">Contact</a>
+    </div>
+
+  </div>
+</nav>
+  <div id="header-inner-wrapper" class="bg-gray-100 pt-32 lg:pt-32">
+    <div
+      class="w-full max-w-screen-xl relative mx-auto px-6 pt-16 pb-40 md:pb-24"
+    >
+      <div class="text-left md:text-center sm:max-w-2xl max-w-3xl mx-auto">
+        {{ with .Params.header_brand }}
+          {{- partial "header/brand.html" . -}}
+        {{ end }}
+        {{ with .Params.header_tagline_paragraph }}
+          {{- partial "header/tagline_paragraph.html" . -}}
+        {{ end }}
+        <div class="flex mt-6 justify-start md:justify-center">
+          {{ with .Params.header_button_cta }}
+            {{- partial "header/button_cta.html" . -}}
+          {{ end }}
+          {{ with .Params.header_button_more }}
+            {{- partial "header/button_more.html" . -}}
+          {{ end }}
+        </div>
+      </div>
+      {{ with .Params.teaser_image }}
+        {{- partial "header/teaser_image.html" . -}}
+      {{ end }}
+    </div>
+  </div>
+</header>

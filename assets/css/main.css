@@ -1,0 +1,132 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@source "hugo_stats.json";
+
+/* 
+  🌿 Color Palette:
+  - Primary Green: #3E7C4A (leafy, natural)
+  - Secondary Accent: #A3B18A (soft sage)
+  - Dark Neutral: #2C2C2C
+  - Light Neutral: #F5F5F2
+  - Highlight: #D9CBA3 (warm soil tone)
+*/
+
+/*
+#
+# Buttons
+#
+*/
+
+.button-primary {
+  background-color: #3E7C4A;
+  color: #ffffff;
+  border: none;
+}
+
+.button-primary:hover {
+  background-color: #2E5E38;
+}
+
+.button-secondary {
+  background-color: #A3B18A;
+  color: #2C2C2C;
+}
+
+.button-secondary:hover {
+  background-color: #8B9D73;
+}
+
+/*
+#
+# Top border color of form inputs
+#
+*/
+
+.border-t {
+  border-color: #3E7C4A;
+}
+
+/*
+#
+# Header Background & Text
+#
+*/
+
+#header-inner-wrapper {
+  background-color: rgba(46, 94, 56, 0.9); /* semi-transparent green */
+}
+
+#brand-headline {
+  color: #D9CBA3; /* warm light accent */
+}
+
+#tagline-paragraph {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/*
+#
+# Content below the header
+#
+*/
+
+.prose h1,
+.prose h2,
+.prose h3 {
+  color: #3E7C4A;
+}
+
+.prose p {
+  color: #2C2C2C;
+}
+
+body {
+  background-color: #F5F5F2;
+}
+
+/*
+#
+# Images
+# - Removes black border and adds soft corners + subtle shadow
+#
+*/
+
+img {
+  border: none !important;
+  border-radius: 0.5rem; /* soft rounded corners */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* subtle shadow */
+}
+
+/*
+#
+# Forms and inputs
+#
+*/
+
+input,
+textarea {
+  border-top: 2px solid #3E7C4A;
+  background-color: #ffffff;
+  color: #2C2C2C;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-top-color: #2E5E38;
+}
+
+/*
+#
+# Links
+#
+*/
+
+a {
+  color: #3E7C4A;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #2E5E38;
+}
