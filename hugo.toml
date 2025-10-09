@@ -1,4 +1,4 @@
-baseURL = "https://example.com"
+baseURL = "https://https://rosarioiacono.github.io/vertirhizae/"
 publishDir = "docs"
 
 # This is a "one page"-website, so we do not need these kinds of pages...
