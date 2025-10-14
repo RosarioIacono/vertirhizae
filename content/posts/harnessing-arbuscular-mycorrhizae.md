@@ -11,6 +11,8 @@ author: "VertiRhizae Project"
 
 A primary challenge in optimizing vertical farming is achieving maximum resource efficiency and plant resilience without relying on intensive inputs. The VertiRhizae research project, funded through dynamic platform funding at the UFZ Helmholtz Centre for Environmental Research, investigates a biological solution to this challenge: the symbiotic relationship between tomato plants and arbuscular mycorrhizal fungi (AMF).
 
+<!--more-->
+
 This research is inspired by a comprehensive review of the scientific literature, such as the synthesis published in *Plants* (PMC7464697), which details the profound metabolic reprogramming that occurs in plants colonized by these beneficial fungi. This blog post outlines the scientific basis of this partnership and its potential application in controlled environment agriculture.
 
 ### The Scientific Basis of the Plant-Fungal Symbiosis

@@ -1,25 +1,37 @@
-{{/* layouts/posts/list.html */}}
 {{ define "main" }}
-<main class="max-w-screen-xl mx-auto px-6 py-8">
-    <h1 class="text-3xl font-bold text-green-700 mb-6">Blog Posts</h1>
-    
-    {{ .Content }}
+<!-- Add the header partial here -->
+{{- partial "header.html" . -}}
 
-    <ul class="space-y-6">
+<main class="max-w-screen-xl mx-auto px-6 py-8 mt-32"> <!-- Added mt-32 to account for fixed header -->
+    <h1 class="text-3xl font-bold text-green-700 mb-6">{{ .Title }}</h1>
+    
+    <ul class="space-y-8">
         {{ range .Pages }}
-        <li class="border-b pb-4">
-            <article>
-                <h2 class="text-xl font-semibold">
-                    <a href="{{ .RelPermalink }}" class="text-gray-800 hover:text-green-700">{{ .Title }}</a>
-                </h2>
-                <time datetime="{{ .Date.Format "2006-01-02" }}" class="text-gray-500 text-sm">
-                    {{ .Date.Format "January 2, 2006" }}
-                </time>
-                {{ if .Description }}
-                <p class="text-gray-600 mt-2">{{ .Description }}</p>
-                {{ else }}
-                <p class="text-gray-600 mt-2">{{ .Summary }}</p>
+        <li class="border-b pb-8">
+            <article class="flex flex-col md:flex-row gap-4">
+                <!-- Featured Image -->
+                {{ with .Params.featured_image }}
+                <div class="md:w-1/4 flex-shrink-0">
+                    {{ $image := $.Page.Resources.GetMatch . }}
+                    <img src="{{ with $image }}{{ .RelPermalink }}{{ else }}{{ . | absURL }}{{ end }}" alt="{{ $.Title }} featured image" class="rounded-lg shadow-md w-full h-auto object-cover">
+                </div>
                 {{ end }}
+
+                <!-- Post Content Summary -->
+                <div class="{{ with .Params.featured_image }}md:w-3/4{{ end }}">
+                    <h2 class="text-xl font-semibold mb-2">
+                        <a href="{{ .RelPermalink }}" class="text-gray-800 hover:text-green-700">{{ .Title }}</a>
+                    </h2>
+                    <time datetime="{{ .Date.Format "2006-01-02" }}" class="text-gray-500 text-sm">
+                        {{ .Date.Format "January 2, 2006" }}
+                    </time>
+                    <div class="mt-2 text-gray-600">
+                        {{ .Summary }}
+                    </div>
+                    {{ if .Truncated }}
+                    <a href="{{ .RelPermalink }}" class="inline-block mt-2 text-green-700 font-medium hover:underline">Read more...</a>
+                    {{ end }}
+                </div>
             </article>
         </li>
         {{ end }}
