@@ -1,22 +1,23 @@
 <header id="header">
   <nav class="w-full bg-white shadow-md fixed top-0 left-0 z-50">
-  <div class="max-w-screen-xl mx-auto px-6 py-3 flex justify-between items-center">
-    
-    <!-- Brand / Logo on the left -->
-    <div class="text-xl font-bold text-green-700">
-      {{ with .Params.header_brand }}
-        {{- partial "header/brand.html" . -}}
-      {{ end }}
+    <div class="max-w-screen-xl mx-auto px-6 py-3 flex justify-between items-center">
+      
+      <!-- Brand / Logo on the left -->
+      <div class="text-xl font-bold text-green-700">
+        {{ with .Params.header_brand }}
+          {{- partial "header/brand.html" . -}}
+        {{ end }}
+      </div>
+      
+      <!-- Menu links aligned to the right -->
+      <div class="ml-auto flex space-x-6">
+        <a href="{{ "" | absURL }}" class="text-gray-800 hover:text-green-700 font-medium">Home</a>
+        <a href="{{ "posts/" | absURL }}" class="text-gray-800 hover:text-green-700 font-medium">Blog</a>
+        <a href="{{ "about/" | absURL }}" class="text-gray-800 hover:text-green-700 font-medium">About</a>
+        <a href="#contact-form" class="text-gray-800 hover:text-green-700 font-medium">Contact</a>
+      </div>
     </div>
-    
-    <!-- Menu links aligned to the right -->
-<div class="ml-auto flex space-x-6">
-  <a href="{{ "" | absURL }}" class="text-gray-800 hover:text-green-700 font-medium">Home</a>
-  <a href="{{ "about/" | absURL }}" class="text-gray-800 hover:text-green-700 font-medium">About</a>
-  <a href="#contact-form" class="text-gray-800 hover:text-green-700 font-medium">Contact</a>
-</div>
-  </div>
-</nav>
+  </nav>
   <div id="header-inner-wrapper" class="bg-gray-100 pt-32 lg:pt-32">
     <div
       class="w-full max-w-screen-xl relative mx-auto px-6 pt-16 pb-40 md:pb-24"

@@ -3,6 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/vertirhizae/</loc>
+    <lastmod>2024-01-14T07:07:07+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/vertirhizae/posts/</loc>
+    <lastmod>2024-01-14T07:07:07+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/vertirhizae/posts/harnessing-arbuscular-mycorrhizae/</loc>
+    <lastmod>2024-01-14T07:07:07+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/vertirhizae/about/</loc>
   </url>

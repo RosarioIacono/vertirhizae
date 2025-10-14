@@ -1,12 +1,11 @@
-<!-- layouts/posts/list.html -->
+{{/* layouts/posts/list.html */}}
 {{ define "main" }}
 <main class="max-w-screen-xl mx-auto px-6 py-8">
-    <h1 class="text-3xl font-bold text-green-700 mb-6">{{ .Title }}</h1> 
+    <h1 class="text-3xl font-bold text-green-700 mb-6">Blog Posts</h1>
     
-    {{ .Content }} <!-- This renders any content from your content/posts/_index.md file -->
+    {{ .Content }}
 
     <ul class="space-y-6">
-        <!-- This loop goes through each page in the current section -->
         {{ range .Pages }}
         <li class="border-b pb-4">
             <article>
@@ -16,10 +15,13 @@
                 <time datetime="{{ .Date.Format "2006-01-02" }}" class="text-gray-500 text-sm">
                     {{ .Date.Format "January 2, 2006" }}
                 </time>
+                {{ if .Description }}
+                <p class="text-gray-600 mt-2">{{ .Description }}</p>
+                {{ else }}
+                <p class="text-gray-600 mt-2">{{ .Summary }}</p>
+                {{ end }}
             </article>
         </li>
-        {{ else }}
-        <li>No posts found.</li>
         {{ end }}
     </ul>
 </main>
