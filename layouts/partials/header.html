@@ -18,15 +18,19 @@
       </div>
     </div>
   </nav>
-  <div id="header-inner-wrapper" class="bg-gray-100 pt-32 lg:pt-32">
+  <div id="header-inner-wrapper" class="bg-gray-100 pt-12 lg:pt-12">
     <div
-      class="w-full max-w-screen-xl relative mx-auto px-6 pt-16 pb-40 md:pb-24"
+      class="w-full max-w-screen-xl relative mx-auto px-6 pt-6 pb-16 md:pb-12"
     >
-      <div class="text-left md:text-center sm:max-w-2xl max-w-3xl mx-auto">
+      <div class="w-full max-w-screen-xl relative mx-auto px-6 pt-6 pb-12">
         {{ with .Params.header_tagline_paragraph }}
           {{- partial "header/tagline_paragraph.html" . -}}
         {{ end }}
-        <div class="flex mt-6 justify-start md:justify-center">
+        {{ with .Params.teaser_image }}
+      <div class="mt-4"> <!-- Reduced from mt-12 -->
+        {{- partial "header/teaser_image.html" . -}}
+      {{ end }}
+        <div class="flex mt-4 justify-start md:justify-center">
           {{ with .Params.header_button_cta }}
             {{- partial "header/button_cta.html" . -}}
           {{ end }}
@@ -35,9 +39,6 @@
           {{ end }}
         </div>
       </div>
-      {{ with .Params.teaser_image }}
-        {{- partial "header/teaser_image.html" . -}}
-      {{ end }}
     </div>
   </div>
 </header>

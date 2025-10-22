@@ -101,6 +101,6 @@ Sign up for project updates — we send out **short, meaningful updates** a few 
 
 Helmholtz Centre for Environmental Research (UFZ)  
 Department BOOEK  
-E-mail: [contact email placeholder]
+E-mail: rosario.iacono[at]ufz.de
 
 We do not use cookies or tracking services. Any data submitted through this site can be deleted upon request.
