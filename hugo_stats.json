@@ -26,6 +26,7 @@
       "nav",
       "ol",
       "p",
+      "script",
       "strong",
       "textarea",
       "time",
@@ -171,9 +172,11 @@
       "stay-connected",
       "tagline-paragraph",
       "teaser-image",
+      "the-key-metric-the-shape-compactness-index-pa",
       "the-scientific-basis-of-the-plant-fungal-symbiosis",
       "the-vertirhizae-research-framework-integrating-wild-relatives",
       "what-were-exploring",
+      "why-leaf-area-and-perimeter",
       "why-this-matters"
     ]
   }

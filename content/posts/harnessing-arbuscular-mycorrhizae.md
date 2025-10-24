@@ -1,12 +1,13 @@
 ---
 title: "Harnessing Arbuscular Mycorrhizal Fungi to Enhance Tomato Resilience in Vertical Farming Systems"
-date: 2024-01-14T07:07:07+01:00
+date: 2025-10-14T07:07:07+01:00
 draft: false
 categories: 
   - "Research"
   - "Vertical Farming" 
   - "Plant-Microbe Interactions"
 author: "VertiRhizae Project"
+type : "post"
 ---
 
 A primary challenge in optimizing vertical farming is achieving maximum resource efficiency and plant resilience without relying on intensive inputs. The VertiRhizae research project, funded through dynamic platform funding at the UFZ Helmholtz Centre for Environmental Research, investigates a biological solution to this challenge: the symbiotic relationship between tomato plants and arbuscular mycorrhizal fungi (AMF).
