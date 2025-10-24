@@ -2,3 +2,14 @@
   {{- partial "header.html" . -}}
   {{- partial "content.html" . -}}
 {{ end }}
+
+<form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+  <!-- This hidden input is CRITICAL for Netlify -->
+  <input type="hidden" name="form-name" value="contact" />
+  
+  <!-- The rest of your form fields (name, email, message, etc.) go here -->
+  <input type="text" name="name" placeholder="Name">
+  <input type="email" name="email" placeholder="Email Address">
+  <textarea name="message" placeholder="Message"></textarea>
+  <button type="submit">Send ✉️</button>
+</form>

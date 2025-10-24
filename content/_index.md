@@ -85,15 +85,7 @@ This project lays the groundwork for future breeding and management strategies t
 Interested in collaborating or learning more about VertiRhizae?  
 We’d love to hear from you.
 
-{{< contact_form id="contact-form" placeholder_name="Name" placeholder_email="Email Address" placeholder_message="Message" button_label="Send ✉️">}}
-
----
-
-## Stay Connected
-
-Sign up for project updates — we send out **short, meaningful updates** a few times a year.
-
-{{< newsletter_sign_up id="newsletter-sign-up-form" placeholder_email="Your Email" button_label="Sign up">}}
+{{< contact_form id="contact-form" placeholder_name="Name" placeholder_email="Email Address" placeholder_message="Message" button_label="Send ✉️" data_netlify="true" >}}
 
 ---
 

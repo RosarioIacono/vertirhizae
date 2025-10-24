@@ -1,8 +1,14 @@
-+++
-date = '2025-10-24T08:16:09+02:00'
-draft = false
-title = 'Measuring the Unseen: How Simple Leaf Shapes Reveal the Impact of Mycorrhizae in Vertical Farming'
-+++
+---
+title: "Measuring the Unseen: How Simple Leaf Shapes Reveal the Impact of Mycorrhizae in Vertical Farming"
+date: 2025-10-24T08:16:09+02:00
+draft: false
+categories: 
+  - "Research"
+  - "Vertical Farming" 
+  - "Plant-Microbe Interactions"
+author: "VertiRhizae Project"
+type : "post"
+---
 
 In the Vertirhizae project, we are exploring a powerful synergy: enhancing tomato growth in the high-tech environment of vertical farming through a natural partnership with mycorrhizal fungi. To understand this hidden relationship, we've turned to a precise and powerful tool: digital image analysis. While the world of plant phenotyping is vast, our focus is razor-sharp: we use the open-source software Fiji (ImageJ) to measure fundamental leaf traits that serve as a window into plant vitality.
 
@@ -53,3 +59,17 @@ By statistically comparing the Area, Perimeter, and Shape Compactness Index (P²
 This quantitative approach allows us to move from a qualitative observation ("the mycorrhized plants look better") to a data-driven conclusion ("the mycorrhized plants show a statistically significant 15% increase in leaf area and a distinct shift in leaf shape compactness by week 6").
 
 By focusing on these fundamental geometric traits with Fiji, the Vertirhizae project is building a clear, reproducible link between a natural biological alliance and the measurable architecture of plant growth in the vertical farms of the future.
+
+### References
+
+Gao J.C. (2011). Measuring plant leaf area by scanner and ImageJ software. CABI Digital Library.
+Maloof J.N. et al. (2013). LeafJ: An ImageJ Plugin for Semi-automated Leaf Shape Measurement. Plant Methods.
+Martin T.N. et al. (2020). ImageJ software as an alternative method for estimating leaf area in crops. Agronomía Colombiana.
+GreenLeafVI Plugin (2025). BioRxiv preprint: a FIJI plugin for chlorophyll index analysis.
+Tang Z. et al. (2023). Precise image-based tomato leaf disease detection. Plant Phenomics.
+Zekri M.A. et al. (2024). Variation in stomata properties analyzed using ImageJ/Fiji. Scientia Horticulturae.
+Puangpathumanond S. et al. (2025). Stomata-targeted nanocarriers enhance plant defense. PNAS Nexus.
+Xin B. et al. (2024). Automatic 3D tomato plant stemwork phenotyping. Computers and Electronics in Agriculture.
+Brodribb T. et al. (2024). Linking xylem network failure with leaf tissue death using Fiji. New Phytologist.
+Dong Z. et al. (2024). Tomato chilling injury classification by imaging. Frontiers in Plant Science.
+​
